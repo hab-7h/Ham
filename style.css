@@ -1,0 +1,442 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn {
+  background: #e67e22; /* Orange background */
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer; /* Added for better UX */
+}
+
+.section-padding {
+  padding: 40px 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Home Section Styles */
+.home-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.home-content h3 {
+  margin-top: 20px;
+}
+
+.home-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.home-content ul li {
+  margin: 5px 0;
+  text-align: left;
+}
+
+/* Discipline Section Styles */
+.discipline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Adjusted minmax for better image fit */
+  gap: 20px;
+}
+
+.discipline {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.discipline img {
+  width: 100%; /* Make image responsive within its container */
+  max-width: 250px; /* Set a maximum width for consistency */
+  height: 180px; /* Set a fixed height for consistency */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  border-radius: 5px; /* Optional: rounded corners for images */
+  margin-bottom: 15px; /* Space between image and text */
+}
+
+.discipline h3 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.discipline p {
+  color: #666;
+  font-size: 0.9em;
+}
+
+/* Package Item Styles (Classes & Prices) */
+.package-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center content within package items */
+}
+
+.package-item h4 {
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.price {
+  font-size: 24px; /* Larger price font */
+  font-weight: bold;
+  color: #e67e22; /* Orange color for price */
+  margin-bottom: 10px;
+}
+
+.price span {
+  font-size: 0.6em;
+  font-weight: normal;
+  color: #666;
+}
+
+/* Schedule Table Styles */
+.schedule-table {
+  margin-top: 40px; /* More space above the table */
+  overflow-x: auto; /* Enable horizontal scrolling on small screens */
+}
+
+.schedule-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.schedule-table th, .schedule-table td {
+  border: 1px solid #ddd;
+  padding: 12px 8px; /* Increased padding for readability */
+  text-align: center;
+  white-space: nowrap; /* Prevent text wrapping in table cells */
+}
+
+.schedule-table th {
+  background-color: #f2f2f2;
+  font-weight: 600;
+  color: #333;
+}
+
+.schedule-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Zebra striping for readability */
+}
+
+/* Contact Form Styles */
+.contact-form {
+  background: #fff;
+  padding: 30px; /* Increased padding */
+  border-radius: 8px; /* Slightly more rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* More prominent shadow */
+  max-width: 600px;
+  margin: 0 auto 30px auto; /* Added bottom margin */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Increased margin */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px; /* Increased margin */
+  color: #333;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: calc(100% - 22px); /* Account for padding and border */
+  padding: 12px; /* Increased padding */
+  border: 1px solid #ccc; /* Lighter border */
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.form-group textarea {
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.contact-form .btn {
+  width: auto; /* Reset button width for form */
+  display: inline-block; /* Ensure it doesn't take full width */
+  padding: 12px 25px; /* Larger button */
+  font-size: 1.1em;
+}
+
+.contact-details {
+  margin-top: 30px; /* More space */
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-details h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.contact-details p {
+  margin: 8px 0;
+  color: #555;
+}
+
+.contact-details a {
+  color: #e67e22;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+.map-container {
+  margin-top: 30px; /* More space */
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 800px; /* Wider map container */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.map-container h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.map-container iframe {
+  border-radius: 5px; /* Rounded corners for the map */
+}
+
+/* Login/Sign Up Form Styles */
+.login-signup-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  max-width: 450px; /* Slightly wider for better field spacing */
+  margin: 0 auto;
+}
+
+.login-signup-form .form-group {
+  margin-bottom: 20px;
+}
+
+.login-signup-form .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 600;
+}
+
+.login-signup-form .form-group input {
+  width: calc(100% - 22px);
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.login-signup-form .btn {
+  width: 100%; /* Full width button for login/signup */
+  padding: 12px;
+  font-size: 1.1em;
+}
+
+/* Instructor Section Styles */
+.instructor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.instructor {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  text-align: center; /* Center content in instructor cards */
+}
+
+.instructor h3 {
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.instructor p {
+  margin: 5px 0;
+  color: #666;
+  font-size: 0.95em;
+}
+
+.instructor:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Footer Styles */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0; /* Increased padding */
+  margin-top: 40px; /* Space above footer */
+}
+
+.social-icons {
+  margin-bottom: 15px; /* More space */
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 12px; /* Increased spacing between icons */
+  text-decoration: none;
+  font-size: 1.5em; /* Larger icons */
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #e67e22; /* Orange hover effect */
+}
+
+footer p {
+  font-size: 0.9em;
+  color: #bbb;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    margin-top: 15px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .schedule-table th, .schedule-table td {
+    padding: 10px 5px;
+    font-size: 0.85em;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-padding {
+    padding: 20px 15px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr; /* Stack items on very small screens */
+  }
+
+  .home-content,
+  .contact-form,
+  .login-signup-form,
+  .contact-details,
+  .map-container {
+    padding: 15px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
+  .schedule-table th, .schedule-table td {
+    font-size: 0.75em;
+  }
+}
+#home {
+  background-image: url('https://psi-encyclopedia.spr.ac.uk/sites/default/files/styles/article_featured_image/public/media/shutterstock_151846841%20-%20martial%20arts.jpg?itok=YBzXuhJy');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px; /* Adjusted for spacing */
+  color: #fff;
+  text-align: center;
+}
+
+.home-content {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+  padding: 40px;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+.home-image img {
+  width: 100%; 
+  height: auto; 
+  max-width: 800px; 
+  margin-top: 30px; 
+}
+
